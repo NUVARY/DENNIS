@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  color: black;
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.logo:hover{
+    background: #f0f2f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.menu a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.menu a:hover{
+    background: #f0f2f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+/* CONTENEDOR */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* PERFIL */
+.perfil {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.perfil img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.menu-perfil {
+  margin-top: 20px;
+}
+
+.menu-perfil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-perfil li {
+  margin-bottom: 10px;
+}
+
+.menu-perfil a {
+  display: block;
+  padding: 12px;
+  background: #f0f2f5;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-perfil a:hover {
+  background: #e4e6eb;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* FEED */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.publicacion {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.publicacion img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.contenido-extra{
+    display: none;
+}
+.boton-leer{
+    margin-top: 10px;
+    border-radius: 15px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1877f2;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.boton-leer:hover{
+    background: #f0f2f5;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+}
+.publicacion ul{
+    padding-left: 20px;
+}
+
+/* BUZÓN */
+.buzon {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.buzon textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.buzon button {
+  padding: 8px 15px;
+  border: none;
+  background: #1877f2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 100;
+}
+/* BUZÓN DESPLEGABLE */
+
+.buzon-desplegable{
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    margin:15px;
+}
+
+.buzon-desplegable summary{
+    cursor:pointer;
+    list-style:none;
+    background:#0b1220;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    user-select:none;
+}
+
+.buzon-desplegable summary:hover{
+    opacity:.9;
+}
+
+.buzon-desplegable form{
+    margin-top:12px;
+}
+
+.buzon-desplegable textarea{
+    width:100%;
+    min-height:120px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    resize:vertical;
+}
+
+.buzon-desplegable button{
+    margin-top:10px;
+    background:#1877f2;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.buzon-desplegable button:hover{
+    opacity:.9;
+}
+/* Oculta la flecha nativa */
+.buzon-desplegable summary::-webkit-details-marker{
+    display:none;
+}
+
+.buzon-desplegable summary::marker{
+    display:none;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE MÓVIL */
+/* ===================== */
+@media (max-width: 768px) {
+
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil {
+    order: 1;
+  }
+
+  .feed {
+    order: 2;
+  }
+
+  .acciones button {
+    flex: 1;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+}

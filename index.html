@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DΞNNIS+</title>
+
+    <link rel="stylesheet" href="style.css"> <!--Estilo-->
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="logo">DΞNNIS+</div>
+        <div class="menu">
+            <a href="perfil.html">PERFIL</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <aside class="perfil">
+            <h1>BIENVENIDOS</h1><br>
+            <p><strong>DΞNNIS+</strong> | Marca personal de Dennis Palma 
+            Ideas, opiniones, creatividad y proyectos.
+            Parte del ecosistema NUVARY. 🚀</p>
+
+            <div class="menu-perfil">
+                <Ul>
+                 <li><a href="#">PJ.MoisesBlogs</a></li>
+                 <li><a href="https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/">NEXATA INSIGHT MEDIA STUDIO</a></li>
+                 <li><a href="#">NUVARY</a></li>
+                </Ul>
+            </div>
+        </aside>
+
+        <section class="feed">
+            <div class="publicacion">
+
+                <h4>DΞNNIS+</h4><br>
+
+                <h1>👋 Bienvenidos a DΞNNIS+</h1><br>
+
+                <p>
+                    Este es mi espacio personal. Un lugar 
+                   para compartir lo que pienso, mis opiniones, 
+                   reflexiones, intereses y, sobre todo, lo que 
+                   estoy creando. Aquí encontrarás ideas, 
+                   proyectos, tecnología, creatividad, experiencias
+                   y novedades de mi camino como creador.
+                </p>
+
+                <div class="contenido-extra">
+
+                    <p>Pero <strong>DΞNNIS+</strong>forma parte de algo más grande: 
+                    NUVARY, un nuevo ecosistema donde quiero reunir
+                    y desarrollar diferentes proyectos creativos y
+                    digitales.</p><br>
+                    <p><strong>Dentro de este ecosistema estarán:</strong></p><br>
+                    <ul>
+                        <li>
+                            🎙️ PJ.MoisesBlogs — blogs, videos y podcasts.
+                        </li>
+
+                        <li>
+                            🎬 NEXATA INSIGHT MEDIA STUDIO — el estudio 
+                            creativo donde se desarrollarán podcasts, libros, 
+                            videojuegos, producción audiovisual, proyectos con
+                            IA, diseño y nuevas ideas.
+                        </li>
+
+                        <li>
+                        Y aquí, en DΞNNIS+, encontrarás la parte más 
+                        personal: yo, mis pensamientos, mis opiniones y el 
+                        camino detrás de todo lo que estoy construyendo.
+                        </li>
+                    </ul><br>
+                    <p><strong>Este es apenas el comienzo.</strong></p><br>
+                    <ul>
+                        <li>NUVARY es el ecosistema.</li>
+                        <li>DΞNNIS+ es mi identidad.</li>
+                        <li>PJ.MoisesBlogs es el contenido.</li>
+                        <li>NEXATA es la creación.</li>
+                    </ul><br>
+                    <p>
+                        🚀 Bienvenidos a esta nueva etapa.
+                        DΞNNIS+ — Mis ideas. Mis proyectos. Mi evolución.
+                    </p>
+
+                </div>
+                <button class="boton-leer" onclick="leerMas(this)">Leer más</button>
+            </div>
+        </section>
+    </main>
+
+    <!--BUZON DE QUEJAS-->
+    <details class="buzon-desplegable">
+        <summary>BUZON DE QUEJAS</summary>
+
+        <form action="mailto:diamantesdmpj@gmail.com" method="post" enctype="text/plain">
+            <textarea name="queja" placeholder="Escribe tu queja aqui..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </details>
+
+    <!--Boton whatsapp-->
+    <a href="https://wa.me/639121088486?text=Hello%20I%20contact%20you%20from%20the%20website" class="whatsapp">💬</a>
+<script>
+    function leerMas(boton){
+        const contenido = boton.previousElementSibling;
+        if (contenido.style.display === "block"){
+            contenido.style.display = "none";
+            boton.textContent = "leer más";
+        } else{
+            contenido.style.display = "block";
+            boton.textContent = "leer menos";
+        }
+    }
+</script>
+</body>
+</html>
